@@ -146,33 +146,36 @@ esac
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Gem
 export GEM_HOME=/usr/local/ruby/Gems/2.0.14
-export PATH=/usr/local/heroku/bin:/Users/k00068/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/k00068/.jenv/shims:/Users/k00068/.jenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/ruby/Gems/2.0.14/bin
+
+### Editor
 export EDITOR='vim'
+
+### jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-# Python version management: pyenv.
+
+### pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+### play setting
+export PLAY_HOME=~/play-1.2.5.6
+export PATH=$PATH:$PLAY_HOME
+
+### Custom alia
+alias soumu="sh ~/soumu.sh"
+alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias acuc="activator clean update compile"
 alias pa="activator \"run 9010\""
 alias pb="activator \"run 9020\""
 alias pc="activator run"
 
-#play setting
-export PLAY_HOME=~/play-1.2.5.6
-export PATH=$PATH:$PLAY_HOME
-alias soumu="sh ~/soumu.sh"
-alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
-
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# sbt setting
-#export SBT_OPTS="-Xmx=1G"
 
 # Postgresql
 export PGDATA=/usr/local/var/postgres
