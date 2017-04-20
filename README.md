@@ -9,3 +9,9 @@ git clone https://github.com/yukihirai0505/dotfiles
 cd dotfiles
 sh dotfilesLink.sh
 ```
+
+or
+
+```
+curl -sL https://raw.githubusercontent.com/yukihirai0505/dotfiles/master/dotfilesLink.sh | sh
+```
