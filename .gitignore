@@ -1,0 +1,11 @@
+# Ignore default file's
+.Trashes/
+.Trash/
+
+*.swp
+.DS_Store
+Thumbs.db
+
+# Ignore IDE file's
+.idea/
+.idea_modules/
