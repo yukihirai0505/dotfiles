@@ -5,6 +5,8 @@ set -u
 
 setup() {
     dotfiles=$HOME/dotfiles
+    neobundle=$dotfiles/.vim/neobundle.vim
+    neobundleReadMe=$neobundle/README.md
     targets=(".vim" ".vimrc" ".zshrc" "play-1.2.5.6" "soumu.sh" \
              ".gitconfig" ".gitignore" ".ctags" ".tmux.conf")
 
@@ -20,6 +22,10 @@ setup() {
         (cd "$dotfiles" && git pull)
     else
         git clone https://github.com/yukihirai0505/dotfiles "$dotfiles"
+    fi
+
+    if [ ! -e "$neobundleReadMe" ]; then
+        git clone https://github.com/Shougo/neobundle.vim "$neobundle"
     fi
 
     for target in ${targets[@]}; do
