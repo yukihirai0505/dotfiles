@@ -9,3 +9,6 @@ Thumbs.db
 # Ignore IDE file's
 .idea/
 .idea_modules/
+
+# python
+*.pyc
