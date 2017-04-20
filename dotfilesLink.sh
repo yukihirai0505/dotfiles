@@ -6,7 +6,7 @@ set -u
 setup() {
     dotfiles=$HOME/dotfiles
     targets=(".vim" ".vimrc" ".zshrc" "play-1.2.5.6" "soumu.sh" \
-             ".gitconfig" ".gitignore" ".ctags" ".tmux.conf")
+             ".gitconfig" ".gitignore" ".ctags" ".tmux.conf" "solarized")
 
     has() {
         type "$1" > /dev/null 2>&1
