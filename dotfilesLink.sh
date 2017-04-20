@@ -28,7 +28,7 @@ setup() {
     fi
 
     for target in ${targets[@]}; do
-      symlink "$dotfiles$target" "$HOME/$target"
+      symlink "$dotfiles/$target" "$HOME/$target"
     done
 
 }
