@@ -2,7 +2,7 @@
 :wrench: .files
 
 
-# Usage
+## Usage
 
 ```sh
 git clone https://github.com/yukihirai0505/dotfiles
@@ -15,3 +15,7 @@ or
 ```
 curl -sL https://raw.githubusercontent.com/yukihirai0505/dotfiles/master/dotfilesLink.sh | sh
 ```
+
+## All of my macOS setting
+
+https://github.com/yukihirai0505/set-up-macOS
