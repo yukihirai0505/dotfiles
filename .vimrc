@@ -2,7 +2,7 @@
 if 0 | endif
 
 if &compatible
-  set nocompatible               " Be iMproved
+  set nocompatible
 endif
 
 " Required:
