@@ -37,7 +37,9 @@ setup() {
 setupLocalCommand() {
   files=$dotfiles/.local/*
   for filepath in $files; do
-    ln -si $filepath /usr/local/bin
+    if [ ! `echo $filepath | grep README.md` ]; then
+      ln -si $filepath /usr/local/bin
+    fi
   done
 }
 
