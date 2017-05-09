@@ -1,3 +1,4 @@
+#!/bin/sh
 rm -Rf ~/Downloads/*
 rm -Rf ~/Desktop/*
 rm -Rf ~/.Trash/*

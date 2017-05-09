@@ -7,7 +7,7 @@ setup() {
     dotfiles=$HOME/dotfiles
     neobundle=$dotfiles/.vim/neobundle.vim
     neobundleReadMe=$neobundle/README.md
-    targets=(".vim" ".vimrc" ".zshrc" "play-1.2.5.6" "soumu.sh" \
+    targets=(".vim" ".vimrc" ".zshrc" "play-1.2.5.6" \
              ".gitconfig" ".gitignore" ".ctags" ".tmux.conf")
 
     has() {
@@ -34,4 +34,12 @@ setup() {
 
 }
 
+setupLocalCommand() {
+  files=$dotfiles/.local/*
+  for filepath in $files; do
+    ln -si $filepath /usr/local/bin
+  done
+}
+
 setup
+setupLocalCommand

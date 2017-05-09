@@ -144,7 +144,6 @@ export PLAY_HOME=~/play-1.2.5.6
 export PATH=$PATH:$PLAY_HOME
 
 ### Custom alia
-alias soumu="sh ~/soumu.sh"
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias acuc="activator clean update compile"
 alias pa="activator \"run 9010\""
