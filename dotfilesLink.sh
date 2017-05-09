@@ -4,6 +4,7 @@ set -e
 set -u
 
 setup() {
+
     dotfiles=$HOME/dotfiles
     neobundle=$dotfiles/.vim/neobundle.vim
     neobundleReadMe=$neobundle/README.md
@@ -35,12 +36,15 @@ setup() {
 }
 
 setupLocalCommand() {
+
   files=$dotfiles/.local/*
+
   for filepath in $files; do
     if [ ! `echo $filepath | grep README.md` ]; then
       ln -si $filepath /usr/local/bin
     fi
   done
+
 }
 
 setup
