@@ -140,7 +140,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 ### play setting
-export PLAY_HOME=~/play-1.2.5.6
+export PLAY_HOME=~/.play-1.2.5.6
 export PATH=$PATH:$PLAY_HOME
 
 ### Custom alia

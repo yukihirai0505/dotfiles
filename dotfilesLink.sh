@@ -3,13 +3,12 @@
 set -e
 set -u
 
-setup() {
+setupDotFiles() {
 
     dotfiles=$HOME/dotfiles
-    neobundle=$dotfiles/.vim/neobundle.vim
+    neobundle=$dotfiles/targets/.vim/neobundle.vim
     neobundleReadMe=$neobundle/README.md
-    targets=(".vim" ".vimrc" ".zshrc" "play-1.2.5.6" \
-             ".gitconfig" ".gitignore" ".ctags" ".tmux.conf")
+    targets=$dotfiles/targets/\.*
 
     has() {
         type "$1" > /dev/null 2>&1
@@ -30,12 +29,13 @@ setup() {
     fi
 
     for target in ${targets[@]}; do
-      symlink "$dotfiles/$target" "$HOME/$target"
+      targetName=$(basename $target)
+      symlink "$target" "$HOME/$targetName"
     done
 
 }
 
-setupLocalCommand() {
+setupLocalCommands() {
 
     files=$dotfiles/.local/*
 
@@ -48,5 +48,5 @@ setupLocalCommand() {
 
 }
 
-setup
-setupLocalCommand
+setupDotFiles
+setupLocalCommands
