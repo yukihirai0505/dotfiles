@@ -19,7 +19,7 @@
   fix    = commit --amend -v
   fixa   = commit --amend -v -a
   ca     = commit -v -a
-  aa     = add .
+  aa     = add -A
   reh    = reset --hard
   ri     = rebase -i
   df     = diff
