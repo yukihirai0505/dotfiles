@@ -1,5 +1,2 @@
 #!/bin/sh
-rm -Rf $HOME/Downloads/*
-rm -Rf $HOME/Desktop/*
-rm -Rf $HOME/.Trash/*
-rm -Rf $HOME/.Trash/.DS_Store
+rm -Rf $HOME/Downloads/* $HOME/Desktop/* $HOME/.Trash/* $HOME/.Trash/.DS_Store
