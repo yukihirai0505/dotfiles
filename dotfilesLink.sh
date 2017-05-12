@@ -37,11 +37,11 @@ setupDotFiles() {
 
 setupLocalCommands() {
 
-    files=$dotfiles/.local/*
+    files=$dotfiles/.local/command/*
 
     for filepath in $files; do
         commandName=$(basename $filepath)
-        if [ ! `echo $filepath | grep 'README.md'` ] && [ ! `which $commandName` ]; then
+        if [ ! `which $commandName` ]; then
             ln -si $filepath /usr/local/bin
         fi
     done
