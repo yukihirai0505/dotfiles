@@ -139,6 +139,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+### go
+export GOPATH="$HOME/.go"
+export PATH="$PATH:$GOPATH/bin"
+
 ### play setting
 export PLAY_HOME=~/.play-1.2.5.6
 export PATH=$PATH:$PLAY_HOME
