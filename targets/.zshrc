@@ -130,8 +130,9 @@ export GEM_HOME=/usr/local/ruby/Gems/2.0.14
 export EDITOR='vim'
 
 ### jenv
+export PATH="$HOME/.jenv/bin:$PATH"
 if which jenv > /dev/null; then
-  export JENV_ROOT=/usr/local/var/jenv
+  export JENV_ROOT=$HOME/.jenv
   eval "$(jenv init -)"
 fi
 
