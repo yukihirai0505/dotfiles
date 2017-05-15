@@ -1,7 +1,5 @@
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
 #!/bin/zsh
+
 ## Charset
 export LANG='ja_JP.UTF-8'
 export LC_TIME='en_US.UTF-8'
@@ -132,7 +130,10 @@ export GEM_HOME=/usr/local/ruby/Gems/2.0.14
 export EDITOR='vim'
 
 ### jenv
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+if which jenv > /dev/null; then
+  export JENV_ROOT=/usr/local/var/jenv
+  eval "$(jenv init -)"
+fi
 
 ### pyenv
 export PYENV_ROOT="$HOME/.pyenv"
