@@ -131,10 +131,7 @@ export EDITOR='vim'
 
 ### jenv
 export PATH="$HOME/.jenv/bin:$PATH"
-if which jenv > /dev/null; then
-  export JENV_ROOT=$HOME/.jenv
-  eval "$(jenv init -)"
-fi
+eval "$(jenv init -)"
 
 ### pyenv
 export PYENV_ROOT="$HOME/.pyenv"
