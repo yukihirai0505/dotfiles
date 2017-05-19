@@ -1,0 +1,5 @@
+# Custom
+
+source/*
+!source/*.zip
+!source/*.tar.gz

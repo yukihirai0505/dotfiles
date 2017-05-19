@@ -21,7 +21,7 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([%0-9]#)*=0=01;31
 ## Colort for prompt
 autoload -U colors; colors
 setopt prompt_subst
-## Avoid zsh: no matches found: 
+## Avoid zsh: no matches found:
 setopt nonomatch
 export CLICOLOR=true
 
@@ -109,7 +109,7 @@ case "${OSTYPE}" in
     alias ll="ls -alG -w"
     ;;
   linux*)
-    ## linux 
+    ## linux
     alias ls="ls -a --color"
     alias ll="ls -la --color"
     ;;
@@ -143,8 +143,12 @@ export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
 
 ### play setting
-export PLAY_HOME=~/.play-1.2.5.6
-export PATH=$PATH:$PLAY_HOME
+export PLAY_HOME="$HOME/dotfiles/source/play-1.2.7"
+export PATH="$PATH:$PLAY_HOME"
+
+### Ant setting
+export ANT_HOME="$HOME/dotfiles/source/apache-ant-1.9.9"
+export PATH="$PATH:$ANT_HOME/bin"
 
 ### Custom alia
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'

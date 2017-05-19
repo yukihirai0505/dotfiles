@@ -48,5 +48,28 @@ setupLocalCommands() {
 
 }
 
+setUpSources() {
+
+    sourceDir=$dotfiles/source
+    files=$sourceDir/*
+
+    for filepath in $files; do
+        if [ -f $filepath ]; then
+            if [ `echo $filepath | grep '\.zip'` ] ; then
+                if [ ! -d `echo $filepath | sed -e "s/\.zip//"` ] ; then
+                    unzip $filepath -d $sourceDir/
+                fi
+            fi
+            if [ `echo $filepath | grep '\-bin\.tar\.gz'` ] ; then
+                if [ ! -d `echo $filepath | sed -e "s/-bin\.tar\.gz//"` ] ; then
+                    tar vxf $filepath -C $sourceDir/
+                fi
+            fi
+        fi
+    done
+
+}
+
 setupDotFiles
 setupLocalCommands
+setUpSources
