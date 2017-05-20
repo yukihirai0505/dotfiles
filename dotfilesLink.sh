@@ -3,7 +3,19 @@
 set -e
 set -u
 
+BOLD=$(tput bold)
+BLUE=$(tput setaf 4)
+NORMAL=$(tput sgr0)
+
+printReport() {
+
+    printf "${BLUE}==>${NORMAL} ${BOLD}${1}${NORMAL}\n"
+
+}
+
 setupDotFiles() {
+
+    printReport "Start setupDotFiles"
 
     dotfiles=$HOME/dotfiles
     neobundle=$dotfiles/targets/.vim/neobundle.vim
@@ -33,9 +45,13 @@ setupDotFiles() {
       symlink "$target" "$HOME/$targetName"
     done
 
+    printReport "Finish setupDotFiles"
+
 }
 
 setupLocalCommands() {
+
+    printReport "Start setupLocalCommands"
 
     files=$dotfiles/.local/command/*
 
@@ -46,9 +62,13 @@ setupLocalCommands() {
         fi
     done
 
+    printReport "Finish setupLocalCommands"
+
 }
 
 setUpSources() {
+
+    printReport "Start setUpSources"
 
     sourceDir=$dotfiles/source
     files=$sourceDir/*
@@ -67,6 +87,8 @@ setUpSources() {
             fi
         fi
     done
+
+    printReport "Finish setUpSources"
 
 }
 
