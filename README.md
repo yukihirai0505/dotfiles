@@ -5,15 +5,15 @@
 ## Usage
 
 ```sh
-git clone https://github.com/yukihirai0505/dotfiles
-cd dotfiles
-./dotfilesLink.sh
+$ git clone https://github.com/yukihirai0505/dotfiles
+$ cd dotfiles
+$ ./dotfilesLink.sh
 ```
 
 or
 
 ```
-curl -sL https://raw.githubusercontent.com/yukihirai0505/dotfiles/master/dotfilesLink.sh | sh
+$ curl -sL https://raw.githubusercontent.com/yukihirai0505/dotfiles/master/dotfilesLink.sh | sh
 ```
 
 ## All of my macOS setting
