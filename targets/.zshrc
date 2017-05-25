@@ -124,7 +124,11 @@ esac
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Gem
-export GEM_HOME=/usr/local/ruby/Gems/2.0.14
+export GEM_HOME=$HOME/.gem/ruby/2.0.0
+export PATH="$GEM_HOME/bin:$PATH"
+
+### tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 ### Editor
 export EDITOR='vim'
