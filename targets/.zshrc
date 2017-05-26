@@ -165,6 +165,9 @@ alias pc="activator run"
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # Postgresql
 export PGDATA=/usr/local/var/postgres
 alias pg_start="pg_ctl -l /usr/local/var/postgres/server.log start"
