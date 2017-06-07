@@ -96,4 +96,4 @@ setupDotFiles
 setupLocalCommands
 setUpSources
 
-echo "Let's eat 🍣 "
+printReport "Let's eat 🍣 "
