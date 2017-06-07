@@ -95,3 +95,5 @@ setUpSources() {
 setupDotFiles
 setupLocalCommands
 setUpSources
+
+echo "Let's eat 🍣 "
