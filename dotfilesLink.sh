@@ -92,6 +92,8 @@ setUpSources() {
 
 }
 
+printReport "I wanna eat 🍣 "
+
 setupDotFiles
 setupLocalCommands
 setUpSources
