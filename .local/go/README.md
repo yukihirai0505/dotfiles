@@ -1,3 +1,7 @@
+## Build
+
+`go build -o ../../command/[command name] [file].go`
+
 ## Environment
 
 - https://github.com/urfave/cli
