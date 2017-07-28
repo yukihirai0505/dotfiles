@@ -25,7 +25,7 @@ func main() {
 	app.Action = func(c *cli.Context) error {
 		if target != "" {
 			fmt.Println("Start", "🍣")
-			err := exec.Command("sh", "-c", "kill -9 $(ps aux | grep "+target+" | awk 'NR==1' | awk '{print $2}')").Run()
+			err := exec.Command("sh", "-c", "pgrep "+target+" | xargs kill -9").Run()
 			if err != nil {
 				fmt.Println("Err", err)
 			} else {
