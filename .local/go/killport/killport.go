@@ -32,7 +32,7 @@ func main() {
 	app.Action = func(c *cli.Context) error {
 		if port != "" && target != "" {
 			fmt.Println("Start", "🍣")
-			err := exec.Command("sh", "-c", "kill -9 $(lsof -i:"+port+" | pgrep "+target+")").Run()
+			err := exec.Command("sh", "-c", "kill -9 $(lsof -i:"+port+" | grep "+target+" | awk 'NR==1' | awk '{print $2}')").Run()
 			if err != nil {
 				fmt.Println("Err", err)
 			} else {
