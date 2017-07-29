@@ -31,14 +31,14 @@ func main() {
 	}
 	app.Action = func(c *cli.Context) error {
 		if port != "" && target != "" {
-			fmt.Println("Start", "🍣")
+			fmt.Println("Start", "eating 🍣i")
 			err := exec.Command("sh", "-c", "kill -9 $(lsof -i:"+port+" | grep "+target+" | awk 'NR==1' | awk '{print $2}')").Run()
 			if err != nil {
 				fmt.Println("Err", err)
 			} else {
 				fmt.Println("Success")
 			}
-			fmt.Println("Finish", "🍣")
+			fmt.Println("Finish", "eating 🍣")
 		} else {
 			fmt.Println("Plz set", "port number with -p or -port option and target process command with -t or -target")
 			fmt.Println("ex)", "killport -p 9010 -t java")
