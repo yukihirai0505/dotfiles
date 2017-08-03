@@ -172,3 +172,6 @@ eval "$(direnv hook zsh)"
 export PGDATA=/usr/local/var/postgres
 alias pg_start="pg_ctl -l /usr/local/var/postgres/server.log start"
 alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+# Custom function
+function history-all { history -E 1 }
