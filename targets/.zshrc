@@ -142,6 +142,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+### OpenSSL
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
 ### go
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
