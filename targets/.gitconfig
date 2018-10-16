@@ -24,6 +24,7 @@
   ri     = rebase -i
   df     = diff
   dc     = diff --cached
+  dff    = diff --diff-filter=M
   sh     = show
   pl     = pull --ff
   ps     = push
@@ -32,6 +33,7 @@
   tig    = !tig
   gr     = grep -I
   rc     = rm -r --cached .
+  search = grep --no-index
 
 [push]
   default = current
