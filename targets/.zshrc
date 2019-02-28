@@ -162,6 +162,10 @@ export PATH="$PATH:$PLAY_HOME"
 export ANT_HOME="$HOME/dotfiles/source/apache-ant-1.9.9"
 export PATH="$PATH:$ANT_HOME/bin"
 
+### DockerSlim
+export DOCKER_SLIM_HOME="$HOME/dotfiles/source/dist_mac"
+export PATH="$PATH:$DOCKER_SLIM_HOME"
+
 ### Custom alia
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias acuc="activator clean update compile"
