@@ -150,6 +150,9 @@ export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
+### Java Home
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
 ### go
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
@@ -165,6 +168,10 @@ export PATH="$PATH:$ANT_HOME/bin"
 ### DockerSlim
 export DOCKER_SLIM_HOME="$HOME/dotfiles/source/dist_mac"
 export PATH="$PATH:$DOCKER_SLIM_HOME"
+
+### Gosu
+export GOSU_HOME="$HOME/dotfiles/source/gosu-1.14.10/bin"
+export PATH="$PATH:$GOSU_HOME"
 
 ### Custom alia
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
