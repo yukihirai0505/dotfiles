@@ -169,29 +169,6 @@ export PATH="$PATH:$ANT_HOME/bin"
 export DOCKER_SLIM_HOME="$HOME/dotfiles/source/dist_mac"
 export PATH="$PATH:$DOCKER_SLIM_HOME"
 
-### Gosu
-export GOSU_HOME="$HOME/dotfiles/source/gosu-1.14.10/bin"
-export PATH="$PATH:$GOSU_HOME"
-
-### Custom alia
-alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
-alias acuc="activator clean update compile"
-alias pa="activator \"run 9010\""
-alias pb="activator \"run 9020\""
-alias pc="activator run"
-
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# direnv
-eval "$(direnv hook zsh)"
-
-# Postgresql
-export PGDATA=/usr/local/var/postgres
-alias pg_start="pg_ctl -l /usr/local/var/postgres/server.log start"
-alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
-
 # Custom function
 function history-all { history -E 1 }
 
