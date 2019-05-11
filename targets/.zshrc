@@ -157,10 +157,6 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
 
-### play setting
-export PLAY_HOME="$HOME/dotfiles/source/play-1.2.7"
-export PATH="$PATH:$PLAY_HOME"
-
 ### Ant setting
 export ANT_HOME="$HOME/dotfiles/source/apache-ant-1.9.9"
 export PATH="$PATH:$ANT_HOME/bin"
@@ -184,3 +180,4 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
+
